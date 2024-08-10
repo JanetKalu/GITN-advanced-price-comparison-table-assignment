@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Price Comparison Table</title>
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+        
+        h1 {
+            color: rgb(86, 36, 134);
+            text-align: center;
+            
+        }
+        
+        h2 {
+            color: deeppink;
+        }
+
+        small {
+            color: red;
+        }
+
+        tr, th, td {
+            border-spacing: 2px;
+            padding: 10px;
+        }
+        
+        
+        table {
+            background-color: rgb(233, 230, 230); 
+            border: 3px solid black;
+            text-decoration-color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 80%;
+            border-spacing: 2px;
+            
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        thead tr {
+            background-color: #f2f2f2;
+            font-size: large;
+        
+        
+        }
+
+        tbody th {
+            background-color: #421b9b ;
+            font-size: large;
+        }
+
+        tr, th, td {
+            border: 1px solid ;
+            border-collapse: collapse; 
+        
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #a06ee1;
+            
+
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #cbbcf6;
+
+        }
+
+        strike {
+            color: crimson;
+        }
+
+        span {
+            color: black;
+
+        }
+
+        .features-and-price-width {
+            width: 40%;
+        }
+
+        .promo-price-width, .rating-width {
+            width: 10%;
+        }
+
+        .stock-status-width, .category-width {
+            width: 10%;
+        }
+        
+        .product-name-width {
+            width: 15%;
+        }
+       
+        .star-rating {
+            color: yellow;
+            font-size: 25px;
+        }
+
+        .text-align {
+            text-align: center;
+        }
+        
+        .available-stock {
+            border: 1px solid black;
+            font-weight: bold;
+        }
+
+        .limited-stock {
+            color: rgb(237, 214, 79);
+            border: 1px solid black;
+
+        }
+
+        .out-of-stock {
+            color: red;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+
+        caption {
+            font-size: large;
+            color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome To Janet's Store</h1>
+        <h2>Hurray! Enjoy <b><i>20%</i></b> discount in August</h2>
+        <table>
+            <caption>Advanced Price Comparison Table</caption>
+            <thead>
+                <tr class="header-height">
+                    <th class="product-name-width">Product Name</th>
+                    <th class="category-width">Category</th>
+                    <th colspan="2" class="features-and-price-width">Features & Price</th>
+                    <th class="promo-price-width">Promo Price</th>
+                    <th class="rating-width">Rating</th>
+                    <th class="stock-status-width">Stock Status</th>
+                    
+                </tr>
+            </thead>
+            <tbody >
+                 <tr>
+                    <th>Sonia Peppe & Onion</th>
+                    <td rowspan="2" class="text-align">Tomato Paste</td>
+                    <td rowspan="2">Contains tomato, pepper, onion, soy. 70<sub>g</sub></td>
+                    <td>
+                        <strike>
+                            <span>&#x20A6;170.00</span>
+
+                        </strike>
+                    </td>
+            
+                    <td class="text-align">&#x20A6;136.00</td>
+                    <td>
+                        <span class="star-rating">&star;&star;&star;&star;</span>
+                    </td>
+                    <td class="out-of-stock">Out Of Stock</td>
+            
+                </tr>
+                <tr>
+                    <th>Gino Magic Peppe & Onion</th>
+                    <td>
+                        <strike>
+                            <span>&#x20A6;200.00</span>
+
+                        </strike>
+                    </td>
+            
+                    <td class="text-align">&#x20A6;160.00</td>
+                    <td>
+                        <span class="star-rating">&star;&star;&star;&star;&star;</span>
+                    </td>
+                    <td class="limited-stock">Limited</td>
+            
+                </tr>
+                <tr>
+                    <th>Lipton Yellow Label Tea</th>
+                    <td class="text-align">Tea</td>
+                    <td>Contains 25 black tea teabags, 50<sub>g</sub></td>
+                    <td>
+                        <strike>
+                            <span>&#x20A6;500.00</span>
+
+                        </strike>
+                    </td>
+                    <td class="text-align">&#x20A6;400.00</td>
+                    <td>
+                        <span class="star-rating">&star;&star;&star;&star;</span>
+                    </td>
+                    <td class="available-stock">Available</td>
+            
+                </tr>
+                <tr>
+                    <th>Laziz Tomato Ketchup</th>
+                    <td class="text-align">Ketchup</td>
+                    <td>All natural tomato ketchup, 500<sub>g</sub></td>
+                    <td>
+                        <strike>
+                            <span>&#x20A6;1,200.00</span>
+
+                        </strike>
+                    </td>
+                    <td class="text-align">&#x20A6;960.00</td>
+                    <td>
+                        <span class="star-rating">&star;&star;&star;</span>
+                    </td>
+                    <td class="available-stock">Available</td>
+            
+                </tr>
+                <tr>
+                    <th>Dano Cool Cow</th>
+                    <td rowspan="2" class="text-align">Dairy</td>
+                    <td rowspan="2">Instant filled milk powder enriched with Vitamin A+D, protein, calcium. 320<sub>g</sub></td>
+                    <td>
+                        <strike>
+                            <span>&#x20A6;2,800.00</span>
+
+                        </strike>
+                    </td>
+                    <td class="text-align">&#x20A6;2,240.00</td>
+                    <td>
+                        <span class="star-rating">&star;&star;&star;&star;&star;</span>
+                    </td>
+                    <td class="available-stock">Available</td>
+            
+                </tr>
+                <tr>
+                    <th>Peak Refill Milk</th>
+                    <td>
+                        <strike>
+                            <span>&#x20A6;3,200.00</span>
+
+                        </strike>
+                    </td>
+                    <td class="text-align">&#x20A6;2,560.00</td>
+                    <td>
+                        <span class="star-rating">&star;&star;&star;&star;&star;</span>
+                    </td>
+                    <td class="limited-stock">Limited</td>
+            
+                </tr>
+                
+                
+                <tr>
+                    <th>Bokku Bread</th>
+                    <td class="text-align">Bread</td>
+                    <td>Freshly baked bread enriched with fibre, vitamins, and energy. 800<sub>g</sub></td>
+                    <td>
+                        <strike>
+                            <span>&#x20A6;1,400.00</span>
+
+                        </strike>
+                    </td>
+                    <td class="text-align">&#x20A6;1,080.00</td>
+                    <td>
+                        <span class="star-rating">&star;&star;&star;&#9734;&star;</span>
+                    </td>
+                    <td class="out-of-stock">Out Of Stock</td>
+            
+                </tr>
+
+
+             </tbody>
+             
+           
+        </table>
+        <footer>
+    
+            <small>
+                <p>
+                    <strong>Disclaimer: Offer valid while stock lasts!!! Don't snooze, <i>no gree for inflation...</i></strong>
+                </p>
+            </small>
+        </footer>
+            
+        
+    </main>
+</body>
+</html>
